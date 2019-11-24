@@ -220,6 +220,7 @@ static void * const kMXParallaxHeaderKVOContext = (void*)&kMXParallaxHeaderKVOCo
 - (void)setContentViewConstraints {
     [self.contentView.leadingAnchor constraintEqualToAnchor:self.scrollView.leadingAnchor].active = YES;
     [self.contentView.trailingAnchor constraintEqualToAnchor:self.scrollView.trailingAnchor].active = YES;
+    [self.contentView.widthAnchor constraintEqualToAnchor:self.scrollView.widthAnchor].active = YES;
 
     self.positionConstraint = [self.contentView.topAnchor constraintEqualToAnchor:self.scrollView.topAnchor];
     self.positionConstraint.active = YES;
